@@ -1,0 +1,38 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "E:\\wwwroot\\OpenCode\\test", "C:\\Users"]
+    },
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/"
+    },
+    "mysql": {
+      "command": "npx",
+      "args": ["-y", "@liangshanli/mcp-server-mysql"],
+      "env": {
+        "MYSQL_HOST": "127.0.0.1",
+        "MYSQL_PORT": "3306",
+        "MYSQL_USER": "root",
+        "MYSQL_PASSWORD": "zclandxy5424346",
+        "MYSQL_DATABASE": "yuekegu_jiaowu"
+      }
+    },
+    "mongodb": {
+      "command": "npx",
+      "args": ["-y", "mongodb-mcp-server@latest"],
+      "env": {
+        "MDB_MCP_CONNECTION_STRING": "mongodb://localhost:27017",
+        "MDB_MCP_READ_ONLY": "true"
+      }
+    },
+    "fetch": {
+      "command": "npx",
+      "args": ["-y", "mcp-fetch-server"],
+      "env": {
+        "DEFAULT_LIMIT": "50000"
+      }
+    }
+  }
+}
