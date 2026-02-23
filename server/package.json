@@ -6,9 +6,14 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "init": "node scripts/init-db.js"
+    "init": "node scripts/init-db.js",
+    "test": "jest"
   },
-  "keywords": ["education", "admin", "api"],
+  "keywords": [
+    "education",
+    "admin",
+    "api"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -23,6 +28,9 @@
     "uuid": "^9.0.1"
   },
   "devDependencies": {
-    "nodemon": "^3.0.2"
+    "@types/jest": "^30.0.0",
+    "jest": "^30.2.0",
+    "nodemon": "^3.0.2",
+    "supertest": "^7.2.2"
   }
 }
